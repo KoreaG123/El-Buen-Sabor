@@ -4,34 +4,33 @@
    Tipografía: Bebas Neue (display) + Outfit (body)
 ══════════════════════════════════════════════════ */
 
-/* ── Variables ── */
 :root {
-  --orange:    #b5460f;
-  --orange2:   #d4581a;
-  --orange3:   #f07030;
-  --gold:      #e8a020;
-  --cream:     #fdf6ed;
-  --cream2:    #f2e8d8;
-  --cream3:    #e8dac8;
-  --brown:     #3a1a08;
-  --brown2:    #5c2e10;
-  --white:     #ffffff;
-  --text:      #251005;
-  --text2:     #6b3a1f;
-  --gray:      #b89880;
-  --gray2:     #ddd0c0;
-  --wa:        #25D366;
-  --wa2:       #1ebe5d;
-  --red:       #e02020;
-  --green-ok:  #1a7a30;
-  --shadow:    0 3px 14px rgba(0,0,0,.10);
-  --shadow-md: 0 6px 24px rgba(0,0,0,.15);
-  --shadow-lg: 0 12px 40px rgba(0,0,0,.20);
-  --r:         15px;
-  --rs:        9px;
-  --tr:        .22s ease;
-  --fd:        'Bebas Neue', Impact, sans-serif;
-  --fb:        'Outfit', system-ui, sans-serif;
+   orange:    #b5460f;
+  orange2:   #d4581a;
+  orange3:   #f07030;
+  gold:      #e8a020;
+  cream:     #fdf6ed;
+  cream2:    #f2e8d8;
+  cream3:    #e8dac8;
+  brown:     #3a1a08;
+  brown2:    #5c2e10;
+  white:     #ffffff;
+  text:      #251005;
+  text2:     #6b3a1f;
+  gray:      #b89880;
+  gray2:     #ddd0c0;
+  wa:        #25D366;
+  wa2:       #1ebe5d;
+  red:       #e02020;
+  green-ok:  #1a7a30;
+  shadow:    0 3px 14px rgba(0,0,0,.10);
+  shadow-md: 0 6px 24px rgba(0,0,0,.15);
+  shadow-lg: 0 12px 40px rgba(0,0,0,.20);
+  r:         15px;
+  rs:        9px;
+  tr:        .22s ease;
+  fd:        'Bebas Neue', Impact, sans-serif;
+  fb:        'Outfit', system-ui, sans-serif;
 }
 
 /* ── Reset ── */
