@@ -76,32 +76,45 @@ input{font-family:inherit}
 .topbar{
   position:relative;z-index:10;
   display:flex;align-items:center;justify-content:space-between;
-  padding:14px 18px;
+  padding:12px 16px;
+  /* Franja semitransparente para legibilidad */
+  background:linear-gradient(to bottom, rgba(20,6,0,.55) 0%, transparent 100%);
 }
 .topbar-brand{display:flex;align-items:center;gap:10px}
 .topbar-logo{
-  width:46px;height:46px;border-radius:50%;
+  width:48px;height:48px;border-radius:50%;
   object-fit:cover;
-  border:2px solid rgba(255,255,255,.45);
-  background:rgba(255,255,255,.1);
+  border:2.5px solid var(--gold);
+  box-shadow:0 0 0 3px rgba(232,160,32,.25), 0 2px 10px rgba(0,0,0,.4);
 }
+
+/* Bloque de texto del nombre */
+.topbar-text{ display:flex; flex-direction:column; gap:1px; }
+
 .topbar-name{
   display:block;
   font-family:var(--fd);
-  font-size:1.55rem;
-  letter-spacing:.09em;
+  font-size:1.6rem;
+  letter-spacing:.1em;
   line-height:1;
-  background:linear-gradient(135deg,#ffe070 0%,#f0a820 40%,#fff0a0 65%,#d4800a 100%);
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
-  background-clip:text;
-  filter:drop-shadow(0 1px 5px rgba(0,0,0,.55));
+  /* Color sólido dorado visible en cualquier fondo */
+  color:#f5c842;
+  /* Sombra de texto para que resalte sobre la imagen */
+  text-shadow:
+    0 0 12px rgba(232,140,10,.9),
+    0 2px 6px rgba(0,0,0,.8),
+    1px 1px 0 rgba(100,40,0,.6);
 }
+
 .topbar-sub{
-  display:block;font-size:.67rem;
-  color:rgba(255,255,255,.5);
-  letter-spacing:.12em;text-transform:uppercase;
-  margin-top:2px;
+  display:block;
+  font-size:.65rem;
+  font-weight:600;
+  color:rgba(255,255,255,.65);
+  letter-spacing:.15em;
+  text-transform:uppercase;
+  margin-top:3px;
+  text-shadow:0 1px 4px rgba(0,0,0,.7);
 }
 .topbar-wa{
   display:flex;align-items:center;gap:7px;
