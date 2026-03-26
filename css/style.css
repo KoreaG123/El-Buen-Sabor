@@ -86,12 +86,22 @@ input{font-family:inherit}
   background:rgba(255,255,255,.1);
 }
 .topbar-name{
-  display:block;font-family:var(--fd);font-size:1.35rem;
-  color:var(--white);letter-spacing:.06em;line-height:1.1;
+  display:block;
+  font-family:var(--fd);
+  font-size:1.55rem;
+  letter-spacing:.09em;
+  line-height:1;
+  background:linear-gradient(135deg,#ffe070 0%,#f0a820 40%,#fff0a0 65%,#d4800a 100%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip:text;
+  filter:drop-shadow(0 1px 5px rgba(0,0,0,.55));
 }
 .topbar-sub{
-  display:block;font-size:.68rem;color:rgba(255,255,255,.55);
-  letter-spacing:.1em;text-transform:uppercase;
+  display:block;font-size:.67rem;
+  color:rgba(255,255,255,.5);
+  letter-spacing:.12em;text-transform:uppercase;
+  margin-top:2px;
 }
 .topbar-wa{
   display:flex;align-items:center;gap:7px;
