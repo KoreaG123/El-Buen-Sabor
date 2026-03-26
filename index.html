@@ -5,12 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>El Buen Sabor – Delivery Gratis · Moyobamba</title>
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="El Buen Sabor – Comida casera con sabor a selva"/>
-  <meta property="og:description" content="🛵 Delivery GRATIS · Menú del día · Jugos · Broaster · Pedidos por WhatsApp"/>
-  <meta property="og:image" content="img/og-banner.jpg"/>
-  <meta property="og:type" content="website"/>
-  <meta name="theme-color" content="#b5460f"/>
+  <!-- ═══ Open Graph – URLs ABSOLUTAS para WhatsApp / Facebook / Instagram ═══ -->
+  <meta property="og:title"        content="🍽️ El Buen Sabor – Delivery GRATIS en Moyobamba"/>
+  <meta property="og:description"  content="🛵 Delivery GRATIS · Menú del día · Jugos · Broaster · ¡Pide ahora por WhatsApp!"/>
+  <meta property="og:image"        content="https://koreag123.github.io/El-Buen-Sabor/img/og-banner.jpg"/>
+  <meta property="og:image:width"  content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta property="og:url"          content="https://koreag123.github.io/El-Buen-Sabor/"/>
+  <meta property="og:type"         content="website"/>
+  <meta property="og:site_name"    content="El Buen Sabor"/>
+  <meta name="twitter:card"        content="summary_large_image"/>
+  <meta name="twitter:image"       content="https://koreag123.github.io/El-Buen-Sabor/img/og-banner.jpg"/>
+  <meta name="theme-color"         content="#b5460f"/>
 
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
@@ -19,17 +25,20 @@
 </head>
 <body>
 
-<!-- ▓▓▓▓▓ HERO ▓▓▓▓▓ -->
+<!-- ══════════ HERO ══════════ -->
 <header class="hero">
+  <!-- Imagen de fondo – si no existe usa degradado oscuro del CSS -->
   <div class="hero-media">
-    <img src="img/hero.jpg" alt="El Buen Sabor" class="hero-img"
-         onerror="this.style.display='none'"/>
+    <img src="img/hero.jpg" alt="" class="hero-img"
+         onerror="this.remove()"/>
     <div class="hero-overlay"></div>
   </div>
 
+  <!-- TOPBAR -->
   <nav class="topbar">
     <div class="topbar-brand">
-      <img src="img/logo.png" alt="Logo" class="topbar-logo"
+      <!-- Logo del restaurante – usa la imagen que subiste -->
+      <img src="img/logo.png" alt="El Buen Sabor" class="topbar-logo"
            onerror="this.style.display='none'"/>
       <div>
         <span class="topbar-name">El Buen Sabor</span>
@@ -41,6 +50,7 @@
     </a>
   </nav>
 
+  <!-- CONTENIDO HERO -->
   <div class="hero-body">
     <div class="hero-badge">🛵 Delivery GRATIS</div>
     <h1 class="hero-title">Comida casera<br>con sabor a <em>selva</em></h1>
@@ -61,7 +71,7 @@
   </div>
 </header>
 
-<!-- ▓▓▓▓▓ INFO STRIP ▓▓▓▓▓ -->
+<!-- ══════════ INFO STRIP ══════════ -->
 <div class="info-strip">
   <div class="info-strip-inner">
     <div class="info-chip">
@@ -81,7 +91,7 @@
   </div>
 </div>
 
-<!-- ▓▓▓▓▓ MENÚ ▓▓▓▓▓ -->
+<!-- ══════════ MENÚ ══════════ -->
 <section id="menu" class="menu-section">
   <div class="container">
     <div class="sec-head">
@@ -89,7 +99,7 @@
       <p class="sec-sub">Preparado fresco cada mañana 🌿</p>
     </div>
 
-    <!-- Tabs -->
+    <!-- Tabs categoría -->
     <div class="tabs" id="tabs">
       <button class="tab active" data-cat="all">
         <i class="fa-solid fa-th-large"></i> Todo
@@ -108,25 +118,26 @@
       </button>
     </div>
 
-    <!-- Grid -->
+    <!-- Grid de productos (llenado por JS) -->
     <div class="grid" id="grid"></div>
   </div>
 </section>
 
-<!-- ▓▓▓▓▓ NOSOTROS ▓▓▓▓▓ -->
+<!-- ══════════ NOSOTROS / CONTACTO ══════════ -->
 <section class="about-section">
   <div class="container">
     <div class="about-card">
       <div class="about-col">
         <h3>📞 Pedidos y Reservas</h3>
-        <p>Comunícate con anticipación por WhatsApp para asegurar tu mesa o tu delivery.</p>
+        <p>Comunícate con anticipación para asegurar tu mesa o tu delivery.</p>
         <a href="https://wa.me/51918263264" target="_blank" class="btn-wa-big">
           <i class="fa-brands fa-whatsapp"></i> Llamar al 918 263 264
         </a>
       </div>
       <div class="about-col">
         <h3>📍 Dónde estamos</h3>
-        <p>Jr. 25 de Mayo – Subiendo la subida de Shango.<br>Referencia: Antes de llegar al Grifo Sur América.</p>
+        <p>Jr. 25 de Mayo – Subiendo la subida de Shango.<br>
+           Referencia: Antes de llegar al Grifo Sur América.</p>
         <a href="https://maps.app.goo.gl/1Du1t6VzoVoFPYCs9" target="_blank" class="btn-maps">
           <i class="fa-solid fa-map-location-dot"></i> Ver en Google Maps
         </a>
@@ -135,10 +146,10 @@
   </div>
 </section>
 
-<!-- ▓▓▓▓▓ CART SCRIM ▓▓▓▓▓ -->
+<!-- ══════════ CART SCRIM ══════════ -->
 <div class="scrim" id="scrim"></div>
 
-<!-- ▓▓▓▓▓ CART DRAWER ▓▓▓▓▓ -->
+<!-- ══════════ CART DRAWER ══════════ -->
 <aside class="drawer" id="drawer">
   <div class="drawer-head">
     <h3><i class="fa-solid fa-bag-shopping"></i> Tu pedido</h3>
@@ -153,7 +164,7 @@
       <small>¡Agrega algo rico!</small>
     </div>
   </div>
-  <div class="drawer-foot" id="drawerFoot">
+  <div class="drawer-foot" id="drawerFoot" style="display:none">
     <div class="total-row">
       <span>Total</span>
       <strong id="totalLabel">S/ 0.00</strong>
@@ -164,14 +175,14 @@
   </div>
 </aside>
 
-<!-- FAB -->
+<!-- FAB Carrito -->
 <button class="fab" id="fab">
   <i class="fa-solid fa-bag-shopping"></i>
   <span class="fab-badge" id="fabBadge">0</span>
 </button>
 
-<!-- ▓▓▓▓▓ MODAL CHECKOUT ▓▓▓▓▓ -->
-<div class="modal-bg" id="modalBg">
+<!-- ══════════ MODAL CHECKOUT ══════════ -->
+<div class="modal-bg hidden" id="modalBg">
   <div class="modal">
     <div class="modal-head">
       <h3><i class="fa-solid fa-receipt"></i> Datos de entrega</h3>
@@ -180,15 +191,16 @@
       </button>
     </div>
     <div class="modal-body">
+      <!-- Resumen del pedido -->
       <div class="order-preview" id="orderPreview"></div>
 
       <div class="field">
         <label>Nombre completo <span class="req">*</span></label>
-        <input id="fName" type="text" placeholder="Ej: María García"/>
+        <input id="fName" type="text" placeholder="Ej: María García" autocomplete="name"/>
       </div>
       <div class="field">
         <label>Teléfono</label>
-        <input id="fPhone" type="tel" placeholder="Ej: 920 857 471"/>
+        <input id="fPhone" type="tel" placeholder="Ej: 920 857 471" autocomplete="tel"/>
       </div>
       <div class="field">
         <label>Dirección / Referencia <span class="req">*</span></label>
@@ -221,7 +233,7 @@
   </div>
 </div>
 
-<!-- ▓▓▓▓▓ FOOTER ▓▓▓▓▓ -->
+<!-- ══════════ FOOTER ══════════ -->
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-brand">
@@ -255,7 +267,7 @@
   <p class="footer-copy">© 2026 El Buen Sabor · Moyobamba · Hecho con ❤️</p>
 </footer>
 
-<!-- Toast -->
+<!-- Toast notificaciones -->
 <div class="toast" id="toast"></div>
 
 <script src="js/app.js"></script>
