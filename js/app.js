@@ -41,7 +41,7 @@ const CATALOGO = [
   { id: 27, nombre: 'Salchipapa Combinado', precio: 8.00, img: 'img/salchipapa.jpg',      cat: 'broaster',popular: true  },
 ];
 
-const WA = '51920857471';
+const WA = '51918263264';
 
 /* ── ESTADO ── */
 let productos  = cargarProductos();
