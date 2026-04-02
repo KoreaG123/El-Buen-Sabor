@@ -27,17 +27,13 @@
 
 <!-- ══════════ HERO ══════════ -->
 <header class="hero">
-  <!-- Imagen de fondo – si no existe usa degradado oscuro del CSS -->
   <div class="hero-media">
-    <img src="img/hero.jpg" alt="" class="hero-img"
-         onerror="this.remove()"/>
+    <img src="img/hero.jpg" alt="" class="hero-img" onerror="this.remove()"/>
     <div class="hero-overlay"></div>
   </div>
 
-  <!-- TOPBAR -->
   <nav class="topbar">
     <div class="topbar-brand">
-      <!-- Logo del restaurante – usa la imagen que subiste -->
       <img src="img/logo.png" alt="El Buen Sabor" class="topbar-logo"
            onerror="this.style.display='none'"/>
       <div class="topbar-text">
@@ -50,7 +46,6 @@
     </a>
   </nav>
 
-  <!-- CONTENIDO HERO -->
   <div class="hero-body">
     <div class="hero-badge">🛵 Delivery GRATIS</div>
     <h1 class="hero-title">Comida casera<br>con sabor a <em>selva</em></h1>
@@ -99,7 +94,6 @@
       <p class="sec-sub">Preparado fresco cada mañana 🌿</p>
     </div>
 
-    <!-- Tabs categoría -->
     <div class="tabs" id="tabs">
       <button class="tab active" data-cat="all">
         <i class="fa-solid fa-th-large"></i> Todo
@@ -118,7 +112,6 @@
       </button>
     </div>
 
-    <!-- Grid de productos (llenado por JS) -->
     <div class="grid" id="grid"></div>
   </div>
 </section>
@@ -175,7 +168,7 @@
   </div>
 </aside>
 
-<!-- FAB Carrito -->
+<!-- FAB -->
 <button class="fab" id="fab">
   <i class="fa-solid fa-bag-shopping"></i>
   <span class="fab-badge" id="fabBadge">0</span>
@@ -191,9 +184,7 @@
       </button>
     </div>
     <div class="modal-body">
-      <!-- Resumen del pedido -->
       <div class="order-preview" id="orderPreview"></div>
-
       <div class="field">
         <label>Nombre completo <span class="req">*</span></label>
         <input id="fName" type="text" placeholder="Ej: María García" autocomplete="name"/>
@@ -206,12 +197,10 @@
         <label>Dirección / Referencia <span class="req">*</span></label>
         <input id="fAddr" type="text" placeholder="Jr. Los Pinos 123, cerca del colegio"/>
       </div>
-
       <button class="btn-gps" id="btnGps">
         <i class="fa-solid fa-location-crosshairs"></i> Compartir ubicación GPS
       </button>
       <div class="gps-box" id="gpsBox"></div>
-
       <div class="field">
         <label>Método de pago</label>
         <div class="pay-grid">
@@ -225,7 +214,6 @@
           </label>
         </div>
       </div>
-
       <button class="btn-wa-send" id="btnWaSend">
         <i class="fa-brands fa-whatsapp"></i> Enviar pedido por WhatsApp
       </button>
@@ -263,9 +251,14 @@
   <p class="footer-copy">© 2026 El Buen Sabor · Moyobamba · Hecho con ❤️</p>
 </footer>
 
-<!-- Toast notificaciones -->
 <div class="toast" id="toast"></div>
 
+<!-- ══ FIREBASE + APP ══
+     type="module" es obligatorio para los imports de Firebase -->
+<script type="module">
+  import { iniciarMenuFirebase } from './js/menu-firebase.js';
+  iniciarMenuFirebase();
+</script>
 <script src="js/app.js"></script>
 </body>
 </html>
