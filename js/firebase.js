@@ -8,12 +8,13 @@ import { getFirestore }  from "https://www.gstatic.com/firebasejs/10.12.0/fireba
 import { getStorage }    from "https://www.gstatic.com/firebasejs/10.12.0/firebase-storage.js";
 
 const firebaseConfig = {
-  apiKey:            "PEGA_AQUI_TU_API_KEY",
-  authDomain:        "PEGA_AQUI_TU_PROJECT.firebaseapp.com",
-  projectId:         "PEGA_AQUI_TU_PROJECT_ID",
-  storageBucket:     "PEGA_AQUI_TU_PROJECT.appspot.com",
-  messagingSenderId: "PEGA_AQUI_TU_SENDER_ID",
-  appId:             "PEGA_AQUI_TU_APP_ID"
+  apiKey: "AIzaSyC971_tWgR4vogp0V5I5NzP5oAexgQIPVU",
+  authDomain: "elbuensabor-562b9.firebaseapp.com",
+  projectId: "elbuensabor-562b9",
+  storageBucket: "elbuensabor-562b9.firebasestorage.app",
+  messagingSenderId: "254792083145",
+  appId: "1:254792083145:web:442e7347f71f03fa8c0f18",
+  measurementId: "G-GLVC9FHJ1B"
 };
 
 const app        = initializeApp(firebaseConfig);
