@@ -11,7 +11,7 @@ const firebaseConfig = {
   apiKey: "AIzaSyC971_tWgR4vogp0V5I5NzP5oAexgQIPVU",
   authDomain: "elbuensabor-562b9.firebaseapp.com",
   projectId: "elbuensabor-562b9",
-  storageBucket: "elbuensabor-562b9.firebasestorage.app",
+  storageBucket: "elbuensabor-562b9.appspot.com",
   messagingSenderId: "254792083145",
   appId: "1:254792083145:web:442e7347f71f03fa8c0f18",
   measurementId: "G-GLVC9FHJ1B"
