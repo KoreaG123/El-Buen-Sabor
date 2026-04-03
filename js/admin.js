@@ -523,10 +523,8 @@ async function actualizarPrecio(id, precio) {
 ══════════════════════════════════════════ */
 function escucharProductos() {
   const q = fbQuery(
-    fbCollection(db, 'productos'),
-    fbOrderBy('categoria'),
-    fbOrderBy('nombre')
-  );
+  fbCollection(db, 'productos')
+);
   fbOnSnapshot(q,
     snap => {
       productosCache = [];
